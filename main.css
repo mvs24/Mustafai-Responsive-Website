@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+position: relative;
+background: rgb(156, 113, 113);
+display: flex;
+max-height: 5rem;
+justify-content: space-between;
+border-bottom: 3px solid black;
+}
+.image{
+position: absolute;
+width: 70px;
+height: 50px;
+margin: 1rem;
+
+}
+.chevron{
+font-size: 3rem;
+margin: 1rem;
+color: rgb(93, 93, 201);
+}
+nav ul{
+
+/* padding: 1rem; */
+background: rgb(180, 135, 162);
+display: none;
+}
+nav ul li{
+padding: 1.2rem;
+list-style-type: none;
+transition: all 1s ease;
+}
+nav ul li a{
+display: flex;
+text-transform: capitalize;
+text-decoration: none;
+color: black;
+font-size: 1.5rem;
+}
+nav ul li:hover{
+padding-left: 2rem;
+background: rgb(110, 110, 145);
+}
+.go-down{
+    padding-top: 15rem;
+}
+.go-down h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.fa-chevron-down{
+    font-size: 3rem;
+animation-name: pulse;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes pulse{
+0%{
+    transform: scale(1)
+}
+50%{
+    transform: scale(1.5)
+}
+100%{
+    transform: scale(1)
+}
+}
+
+@media screen and (min-width:768px){
+.nav{
+    width: 100%;
+}
+.logo{
+    display: none;
+}
+nav ul  {
+    display: flex!important;
+
+}
+nav ul li{
+    width: 20%;
+}
+.chevron{
+    display: none;
+}
+}
+#home{
+    height: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)) 
+,url(wall.jpeg) center/cover fixed no-repeat;
+
+}
+
+.text h1{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: rgb(68, 56, 177);
+    margin-left: 1rem;
+}
+
+
+.info{
+    display: flex;
+    margin: 0 auto;
+}
+#company{
+  background: url(http://madelsa.al/wp-content/uploads/2013/12/dark-bg.jpg) center/cover fixed no-repeat;
+    min-height: 100vh;
+    transition: all 2s ease;
+    width: 100%;
+}
+.company{
+    margin-top: 0rem;
+    
+}
+.image1{
+    width: 100%;
+    height: 100%;
+}
+.company-text h1{
+
+    padding-top: 1rem;
+    font-size:1.5rem;
+    font-family: 'Dancing Script', cursive;
+    line-height: 2rem;
+    color: rgb(183, 212, 214);
+    
+}
+.staff{
+    background: rgba(0, 0, 0, 0.325);
+    color: white;
+    text-align: center;
+}
+.staff h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.staff ul li{
+    font-size: 1.5rem;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+.fw{
+    font-size: 2rem;
+    color: blue;
+    transition: all 1s ease;
+}
+.fw:hover{
+    
+    transform: scale(1.2);
+    transform: translateY(-15%);
+    
+}
+.fa-instagram{
+    color: rgb(197, 37, 162);
+}
+.readMore{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding-bottom: 1rem;
+    color: blueviolet;  
+    transition: all 2s ease;
+}
+.readMore:hover{
+    background: blueviolet;
+    color: white;
+}
+
+@media screen and (min-width:768px){
+    .company{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+    .company-text h1{
+     margin-left: 1rem;
+    }
+    .icons{
+        margin-left: 0rem;
+    }
+    
+}
+.address address{
+    margin-top: 0.2rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+#gdlr-parallax-wrapper-1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    
+    
+}
+
+.fa-envelope-square{
+    font-size: 1.5rem;
+
+}
+.gdlr-box-with-icon-ux{
+   margin: 0 auto;
+}
+.container2{
+    background: url(http://madelsa.al/wp-content/uploads/2013/12/dark-bg.jpg);
+    min-height: 40vh;
+    
+    
+}
+.contact-us{
+    
+    opacity: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+.address iframe{
+    width:100%;
+}
+
+.contact-icon{
+    border: 3px solid green;
+    border-radius: 0.5rem;
+    width: 8%;
+    align-self: center;
+    margin: 0 auto;
+    background: green;
+}
+.article{
+    background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8));
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid white;
+}
+.article h1{
+    font-size: 1.4rem;
+    font-style: italic;
+}
+@media screen and (min-width:768px){
+    .contact-us{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top:0.1rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+    
+}
+
+}

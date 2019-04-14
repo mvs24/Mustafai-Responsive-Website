@@ -1,0 +1,60 @@
+#company{
+    min-height: 80vh;
+
+}
+.work-container{
+    /* display: flex; */
+    /* margin-top: 2rem; */
+    margin-right: 1rem;
+    
+}
+.img{
+    height: 100%;
+    width: 100%;
+   
+}
+.work-text{
+   width: 100%;
+    color: white;
+    /* margin: 2rem; */
+    padding-top: 2rem;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    
+    
+}
+/* .work-container{
+    margin: 0;
+} */
+.work-text h1{
+    font-size: 2.5rem;
+    text-decoration: aliceblue;
+    text-transform: capitalize;
+
+}
+.work-text h2{
+    font-size: 1.25rem;
+    text-decoration: aliceblue;
+    
+    
+}
+@media screen and (min-width:768px){
+    .work-container{
+        display: flex;
+        padding-left: 1rem;
+        padding-top: 5%;
+    }
+   .work-text{
+       flex: 0 1 auto;
+       color: white;
+   }
+   .work-text h2{
+       width: 100%;
+   }
+   .img{
+    height: 400px;
+    width: 400px;
+    padding: 3rem;
+}
+}

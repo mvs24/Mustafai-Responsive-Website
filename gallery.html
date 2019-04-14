@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+  <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+        
+
+<!-- owl -->
+<link rel="stylesheet" href="owl/owl.carousel.min.css">
+<!-- owl theme -->
+<link rel="stylesheet" href="owl/owl.theme.default.min.css">
+</head>
+<body>
+
+
+       
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+
+
+    <nav class="nav">
+        <div class="logo">
+           <a href=""><img class="image" src="./gallery/logo1.jpg" alt=""></a> 
+            <a href="#" class="chevron"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <ul>
+        <li><a href="index.html">faqja kryesore</a></li>
+        <li><a href="readMore.html">kompania jone</a></li>
+        <li><a href="works.html">punet tona</a></li>
+        <li><a href="gallery.html">galeria</a></li>
+        <li><a href="contact.html">kontakto</a></li>
+        
+        </ul>
+
+
+    </nav>
+    
+    <header id="home">
+        <section class="home">
+           <div class="container">
+               <div class="text">
+                   <h1>mustafai</h1>
+                  <div class="info">
+                      <div> <h3>ure vajgurore</h3></div>
+                     <div><h2>1980</h2></div>  
+                    </div>  
+                </div>
+            </div> 
+            <div class="go-down">
+                <h2>galeria</h2>
+          <a href="#gallery"><i class="fas fa-chevron-down"></i></a>  
+        </div>
+            
+        </section>
+       
+    </header>
+    
+    
+
+</section>
+<section id="gallery">
+    <div class="owl-carousel owl-theme">
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery1.jpg" alt="">
+    </div>
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery2.jpg" alt="">
+    </div>
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery3.jpg" alt="">
+    </div>
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery4.jpg" alt="">
+    </div>
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery1.jpg" alt="">
+    </div>
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery2.jpg" alt="">
+    </div>
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery3.jpg" alt="">
+    </div>
+    <div>
+        <img class="imageCarousel" src="./gallery/gallery4.jpg" alt="">
+    </div>
+</div>
+
+<div class="icons"> <a class="fw" href="#"><i class="fab fa-facebook-square"></i></a>
+    <a class="fw" href="#"><i  class="fab fa-instagram"></i></a>
+    <a class="fw" href="https://www.linkedin.com/in/marius-vasili-042267158/"><i  class="fab fa-linkedin"></i></a>
+    <a class="fw" href="#"><i  class="fab fa-twitter"></i></a></div>
+</section>
+
+ 
+     <!-- owl js -->
+     <script src="owl/owl.carousel.js"> </script>
+
+     <script>
+     
+     $(document).ready(function(){
+    $(".chevron").click(function(){
+        $("nav ul").slideToggle(2000)
+
+    })
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    smartSpeed:1500,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+
+
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+    80%{
+        transform: translateX(7%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        
+    }
+}
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-45%);
+
+    }
+    80%{
+
+     
+        transform: translateY(7%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
+@keyframes moveInBottom2{
+    0%{
+        opacity: 0;
+        transform: translateY(-15%);
+
+    }
+    80%{
+
+     
+        transform: translateY(7%);
+
+    }
+  100%{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
+
+.info{
+    animation: moveInBottom 1s ease ;
+    animation-fill-mode: backwards;
+}
+.text h1{
+    animation: moveInLeft 1s ease  1s ;
+    animation-fill-mode: backwards;
+}
+/* #company{
+    animation: moveInBottom 1s ease ;
+} */
+
+
+.info h3{
+ padding: 0.7rem;
+border: 3px solid rgb(108, 110, 151);;
+margin-right: 4rem;
+/* margin-left: 2rem; */
+border-radius: 0.5rem;
+text-transform: capitalize;
+transition: all 1s ease;
+background: transparent;
+/* cursor: pointer; */
+font-style: italic;
+text-align: center;
+animation: text 2s  infinite
+
+
+
+}
+.info h2{
+padding: 0.7rem;
+border: 3px solid rgb(108, 110, 151);
+/* margin-right: 4rem; */
+/* margin-left: 2rem; */
+border-radius: 0.5rem;
+text-transform: capitalize;
+font-style: italic;
+transition: all 1s ease;
+background: transparent;
+/* cursor: pointer; */
+animation: text 2s  infinite;
+
+
+}
+.fa-chevron-down:active #company{
+transition: all 2s ease;
+animation: moveInBottom 1s ease ;
+    animation-fill-mode: backwards;
+}
+
+@keyframes text{
+0%{ 
+      background: rgb(108, 110, 151);
+  color: white;
+}
+100%{
+   
+      color:rgb(108, 110, 151);
+  background: white;
+}
+}
+@keyframes go{
+0%{
+    opacity: 0;
+    transform: translateY(-10%);
+}
+80%{
+    opacity: 1;
+    transform: translateY(10%)
+}
+100%{
+    opacity: 1;
+    transform: translateY(0); 
+}
+}
+
+#company{
+animation: go 1s ease;
+
+} 

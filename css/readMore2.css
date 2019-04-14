@@ -1,0 +1,260 @@
+
+         @keyframes moveInLeft{
+        0%{
+            opacity: 0;
+            transform: translateX(-15%);
+
+        }
+        80%{
+
+            
+            transform: translateX(7%);
+
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+            
+        }
+    }
+    @keyframes moveInBottom{
+        0%{
+            opacity: 0;
+            transform: translateY(-45%);
+
+        }
+        80%{
+
+         
+            transform: translateY(7%);
+
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+            
+        }
+    }
+  
+    .info{
+        animation: moveInBottom 1s ease ;
+        animation-fill-mode: backwards;
+    }
+    .text h1{
+        animation: moveInLeft 1s ease  1s ;
+        animation-fill-mode: backwards;
+    }
+        #home {
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url(../gallery/collaboration.jpg) center/cover fixed no-repeat;
+    
+        }
+
+    .info h3{
+     padding: 0.7rem;
+    border: 3px solid rgb(108, 110, 151);;
+    margin-right: 4rem;
+    /* margin-left: 2rem; */
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    transition: all 1s ease;
+    background: transparent;
+    /* cursor: pointer; */
+    font-style: italic;
+    text-align: center;
+    animation: text 2s  infinite
+    
+
+
+}
+.info h2{
+    padding: 0.7rem;
+   border: 3px solid rgb(108, 110, 151);
+   /* margin-right: 4rem; */
+   /* margin-left: 2rem; */
+   border-radius: 0.5rem;
+   text-transform: capitalize;
+   font-style: italic;
+   transition: all 1s ease;
+   background: transparent;
+   /* cursor: pointer; */
+   animation: text 2s  infinite;
+   
+
+}
+
+@keyframes text{
+    0%{ 
+          background: rgb(108, 110, 151);
+      color: white;
+    }
+    100%{
+       
+          color:rgb(108, 110, 151);
+      background: white;
+    }
+}
+#company2{
+  background: url(http://madelsa.al/wp-content/uploads/2013/12/dark-bg.jpg) center/cover fixed no-repeat;
+    min-height: 100vh;
+    transition: all 2s ease;
+    width: 100%;
+}
+.company{
+    margin-top: 0rem;
+    
+}
+#company2{
+       min-height: 95vh;
+    /* padding: 20px; */
+    /* margin: 20rem; */
+    width: 100%;
+}
+.img2{
+    height: 100%;
+    width: 100%;
+}
+.work-text2 h1{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: rgba(92, 103, 165, 0.644);
+    text-transform: uppercase;
+}
+.work-text2 h2{
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media screen and (min-width:668px){
+    .work-container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto;
+        grid-gap: 2rem;
+    }
+}
+@media screen and (min-width:992px){
+    .work-container2{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        margin: 0 auto;
+        grid-gap: 2rem;
+    }
+    .img2{
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+
+
+#perfect{
+    font-size: 1.9rem;
+    margin-top: 8rem;
+   padding-left: 3rem;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to right,rgba(6, 247, 18, 0.808),rgba(30, 187, 38, 0.712));
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all 1s ease;
+}
+#perfect:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.2);
+    text-shadow:5px 10px 20px rgb(19, 18, 18,0.4);
+}
+.image-section img{
+    height: 100%;
+    width: 100%;
+}
+.text-section{
+    display: block;
+    margin: 3rem auto;
+    width: 70%;
+}
+.section1{
+    background: #fff;
+    position: relative;
+   
+}
+.main-part{
+   min-height: 85vh;  
+   position: absolute;
+}
+
+@media screen and (min-width:768px){
+    #perfect{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width:992px){
+    #perfect{
+        font-size: 3.0rem;
+    }
+    .work-text2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:1068px){
+    #perfect{
+        font-size: 3.5rem;
+    }
+}
+.main-part{
+    position: relative;
+    margin-top: 8rem;
+   
+}
+.image-section{
+    width: 55%;
+    height: 90%;
+    box-shadow: 0px 10px 20px rgba(24, 24, 24, 0.478);
+    position: absolute;
+    border-radius: 0.5rem;
+    outline-offset: 0.45rem;
+}
+.image-section--p1{
+    top: -05%;
+    left: 5%;
+    transition: all 0.6s ease;
+    width: 50%;
+    height: 50%;
+}
+.image-section--p2{
+    top: -5%;
+    right: 0;
+    transition: all 0.6s ease;
+    width: 50%;
+    height: 50%;
+}
+.image-section--p3{
+    top: 10%;
+    left: 20%;
+    transition: all 0.6s ease;
+    width: 50%;
+    height: 50%;
+}
+.image-section--p3:hover{
+   transform: scale(1.05);
+   z-index: 20;
+   outline: 15px solid rgba(86, 115, 197, 0.815);
+}
+.image-section--p2:hover{
+   transform: scale(0.95);
+   z-index: 20;
+   outline: 15px solid rgba(86, 115, 197, 0.815);
+}
+.image-section--p1:hover{
+    outline: 15px solid rgba(86, 115, 197, 0.815);
+   transform: scale(1.05);
+   z-index: 20;
+}
+.main-part:hover :not(:hover){
+    transform: scale(0.9)
+}

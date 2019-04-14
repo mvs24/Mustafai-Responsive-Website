@@ -1,0 +1,120 @@
+
+     @keyframes moveInLeft{
+        0%{
+            opacity: 0;
+            transform: translateX(-15%);
+
+        }
+        80%{
+
+            
+            transform: translateX(7%);
+
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+            
+        }
+    }
+    @keyframes moveInBottom{
+        0%{
+            opacity: 0;
+            transform: translateY(-45%);
+
+        }
+        80%{
+
+         
+            transform: translateY(7%);
+
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+            
+        }
+    }
+    @keyframes moveInBottom2{
+        0%{
+            opacity: 0;
+            transform: translateY(-15%);
+
+        }
+        80%{
+
+         
+            transform: translateY(7%);
+
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+            
+        }
+    }
+
+    .info{
+        animation: moveInBottom 1s ease ;
+        animation-fill-mode: backwards;
+    }
+    .text h1{
+        animation: moveInLeft 1s ease  1s ;
+        animation-fill-mode: backwards;
+    }
+#home{
+    height: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+background: url(https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center/cover fixed no-repeat;
+
+}
+.info h3{
+     padding: 0.7rem;
+    border: 3px solid rgb(245, 240, 240);
+    margin-right: 4rem;
+    /* margin-left: 2rem; */
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    transition: all 1s ease;
+    background: transparent;
+    /* cursor: pointer; */
+    font-style: italic;
+    text-align: center;
+    animation: text 2s  infinite
+    
+
+
+}
+.info h2{
+    padding: 0.7rem;
+   border: 3px solid  rgba(255, 255, 255, 0.658);;
+   /* margin-right: 4rem; */
+   /* margin-left: 2rem; */
+   border-radius: 0.5rem;
+   text-transform: capitalize;
+   font-style: italic;
+   transition: all 1s ease;
+   background: transparent;
+   /* cursor: pointer; */
+   animation: text 2s  infinite;
+   /* animation-delay: 4s; */
+
+}
+
+@keyframes text{
+    0%{ 
+          background: rgb(206, 83, 83);
+      color: rgb(245, 240, 240);
+    }
+    100%{
+       
+          color:rgb(206, 83, 83);
+      background: rgb(245, 240, 240);
+    }
+}
+#works{
+    background: #fff;
+}
